@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-170276392-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-170276392-1");
+    </script>
     <meta charset="utf-8" />
     <title>owl good house</title>
     <meta name="description" content="Happy Funky Trippy" />
@@ -8,6 +22,12 @@
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
     <link href="css/style.css" rel="stylesheet" />
     <link rel="icon" type="image/png" href="images/owlgoodhouse_favicon.png" />
+    <meta
+      name="”viewport”"
+      content="”width"
+      ="device-width,"
+      initial-scale="1”"
+    />
   </head>
   <body>
     <div id="home" class="big-bg">
@@ -17,12 +37,23 @@
           <source src="video/main-bg.mp4" type="video/mp4" />
         </video>
         <header class="page-header wrapper">
+          <!-- 🍔 -->
+          <input id="menu" type="checkbox" />
+          <label for="menu" class="open">🍔</label>
+          <label for="menu" class="back"></label>
+          <!-- 🍔 -->
           <h1>
+            <!-- 🍔 -->
+            <label for="menu" class="close">×</label>
+            <!-- 🍔 -->
             <a href="index.html"
               ><img class="logo" src="images/owlgoodhouse_logo.png" alt="🦉"
             /></a>
           </h1>
           <nav>
+            <!-- 🍔 -->
+            <label for="menu" class="close">×</label>
+            <!-- 🍔 -->
             <ul class="main-nav">
               <li><a href="news.html">News</a></li>
               <li><a href="biography.html">Biography</a></li>
