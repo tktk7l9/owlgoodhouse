@@ -403,67 +403,6 @@ aside p {
   color: #0bd;
 }
 
-/* CONTACT
------------------------------------------*/
-
-#contact {
-  background-image: url(../images/contact-bg.jpg);
-  min-height: 100vh;
-  color: #fff;
-}
-
-/* フォーム */
-
-form div {
-  margin-bottom: 14px;
-}
-
-label {
-  font-size: 1.125rem;
-  margin-bottom: 10px;
-  display: block;
-}
-input[type="text"],
-input[type="email"],
-textarea {
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px #fff solid;
-  border-radius: 5px;
-  padding: 10px;
-  font-size: 1rem;
-}
-input[type="text"],
-input[type="email"] {
-  width: 100%;
-  max-width: 240px;
-}
-textarea {
-  width: 100%;
-  max-width: 480px;
-  height: 6rem;
-}
-input[type="submit"] {
-  border: none;
-  cursor: pointer;
-  line-height: 1;
-}
-
-/* SNS */
-#sns {
-  padding: 4% 0;
-}
-
-#sns .wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-#sns .sub-content {
-  margin-bottom: 30px;
-}
-.sns-box {
-  width: 100%;
-}
-
 /* 🍔 */
 .open,
 .close {
@@ -480,6 +419,7 @@ input[type="checkbox"] {
 
 @media screen and (max-width: 1000px) {
   /* 🍔 */
+
   .open,
   .close {
     display: block;
@@ -492,6 +432,12 @@ input[type="checkbox"] {
 
   .page-title {
     font-size: 2.5rem;
+    flex: 2;
+  }
+
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   /* HEADER */
@@ -517,11 +463,6 @@ input[type="checkbox"] {
 
   .home-content {
     margin-top: 20%;
-  }
-
-  .page-header {
-    flex-direction: column;
-    align-items: center;
   }
 
   /* NEWS */
@@ -597,17 +538,5 @@ input[type="checkbox"] {
     margin-top: 6%;
     margin-bottom: 50px;
     padding: 0 0 0 0;
-  }
-
-  /* CONTACT */
-  #contact .page-title {
-    margin-top: 40px;
-  }
-
-  /* フォーム */
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    max-width: 100%;
   }
 }
